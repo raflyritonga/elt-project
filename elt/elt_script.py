@@ -1,7 +1,5 @@
 import subprocess
 import time
-import os
-
 
 def wait_for_postgres(host, max_retries=5, delay_seconds=5):
     retries = 0
@@ -32,7 +30,6 @@ else:
         'dbname': 'source_db',
         'user': 'postgres',
         'password': 'secret',
-        # Use the service name from docker-compose as the hostname
         'host': 'source_postgres'
     }
 
@@ -48,6 +45,7 @@ else:
     subprocess_env= source_config['password']
     subprocess.run(dump_command, env=subprocess_env, check=True)
 
+    # Configuration for the destination PostgreSQL database
     destination_config = {
         'dbname': 'destination_db',
         'user': 'postgres',
