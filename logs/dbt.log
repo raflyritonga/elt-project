@@ -1,0 +1,29 @@
+[0m10:01:09.328507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b093c94c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b0923b5c00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b0923b5ba0>]}
+
+
+============================== 10:01:09.333137 | d1cc6f34-d968-4d6c-a1ea-878bcb44fd5d ==============================
+[0m10:01:09.333137 [info ] [MainThread]: Running with dbt=1.8.0
+[0m10:01:09.333818 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/rafly/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:01:14.344504 [debug] [MainThread]: Starter project path: /media/rafly/data/developments/data_engineering_env/elt-project/.venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m10:01:14.396167 [info ] [MainThread]: 
+Your new dbt project "custom_postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:01:14.397210 [info ] [MainThread]: Setting up your profile.
+[0m10:02:05.553031 [info ] [MainThread]: Profile custom_postgres written to /home/rafly/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m10:02:05.554723 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 56.27404, "process_user_time": 1.109065, "process_kernel_time": 0.266011, "process_mem_max_rss": "89416", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m10:02:05.555586 [debug] [MainThread]: Command `dbt init` succeeded at 10:02:05.555469 after 56.27 seconds
+[0m10:02:05.556199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b093c94c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b094001060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79b0923b6fe0>]}
+[0m10:02:05.556820 [debug] [MainThread]: Flushing usage events
