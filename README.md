@@ -46,7 +46,7 @@ Install dependencies
 Run project
 
 ```bash
-  run docker compose up
+  docker compose up
 ```
 
 Once ELT process done, you can access the PostgreSQL databases on ports 5433 and 5434
