@@ -1,6 +1,6 @@
 # IMDB MOVIE ELT
 
-#### Note: You're now in cron branch
+#### Note: You're now in airflow branch
 
 This repository contains a custom Extract, Load, Transform (ELT) project that utilizes Docker and PostgreSQL to demonstrate a simple ELT process for IMDB Movie dataset from Kaggle.
 
