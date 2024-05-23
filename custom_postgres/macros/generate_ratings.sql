@@ -3,10 +3,10 @@
 {% macro generate_ratings() %}
 
 CASE 
-    WHEN user_rating >= 4.5 THEN 'Excellent'
-    WHEN user_rating >= 4.0 THEN 'Good'
-    WHEN user_rating >= 3.0 THEN 'Average'
+    WHEN rating >= 8 AND rating <= 10 THEN 'Excellent'
+    WHEN rating >= 7 AND rating < 8 THEN 'Good'
+    WHEN rating >= 6 AND rating < 7 THEN 'Average'
     ELSE 'Poor'
-END as rating_category
+END AS rating_category
 
 {% endmacro %}

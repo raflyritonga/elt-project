@@ -1,6 +1,6 @@
 -- Using jinja 
-{% set film_title = 'Inception' %}
+{% set movie_title = 'War for the Planet of the Apes' %}
 
 SELECT * 
-    FROM {{ ref('films') }}
-    WHERE title = '{{ film_title }}'
+    FROM {{ ref('movies') }}
+    WHERE title = '{{ movie_title }}'

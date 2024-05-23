@@ -6,9 +6,13 @@ sources:
     database: destination_db
     schema: public
     tables:
-      - name: films
-        description: "List of films."
+      - name: movies
+        description: "List of movies."
       - name: actors
         description: "List of actors."
-      - name: film_actors
-        description: "Mapping between films and actors."
+      - name: genres
+        description: "List of genres."
+      - name: movies_and_actor
+        description: "Mapping between movies and actors."
+      - name: movies_and_genre
+        description: "Mapping between movies and genres."

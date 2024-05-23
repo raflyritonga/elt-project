@@ -50,7 +50,7 @@ t2 = DockerOperator(
     docker_url='unix://var/run/docker.sock',
     network_mode="bridge",
     mounts=[
-        Mount(source='/media/rafly/data/developments/data_engineering_env/elt-project/custom_postgres',
+        Mount(source='/media/rafly/data/developments/data_engineering_env/imdb_movie_elt/custom_postgres',
               target='/opt/dbt', type='bind'),
         Mount(source='/home/rafly/.dbt',
               target='/root', type='bind')
